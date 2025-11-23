@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import { Send, MessageSquare } from 'lucide-react';
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://chat-stream-55p3.onrender.com");
 
 function App() {
   const [currentMessage, setCurrentMessage] = useState("");
