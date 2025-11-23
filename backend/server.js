@@ -13,7 +13,7 @@ const server = http.createServer(app);
 // Hint: You need to pass { cors: { origin: "..." } } as the second argument
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Your Frontend URL
+    origin: "*", // Your Frontend URL
     methods: ["GET", "POST"]
   }
 });
